@@ -1,0 +1,11 @@
+import 'package:get/get.dart';
+
+class SettingsController extends GetxController {
+  final notificationsEnabled = true.obs;
+
+  void toggleNotifications(bool value) {
+    notificationsEnabled.value = value;
+  }
+
+  void logout() {}
+}
